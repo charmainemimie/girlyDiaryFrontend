@@ -25,6 +25,7 @@ const DiaryForm = ({ refreshEntries }) => {
         onChange={(e) => setTitle(e.target.value)}
         className="w-full p-3 border rounded text-lg focus:outline-none focus:ring-2 focus:ring-pink-400"
         placeholder="Title"
+        required
       />
       <textarea
         value={content}
