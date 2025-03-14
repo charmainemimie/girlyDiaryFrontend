@@ -8,10 +8,11 @@ const DiaryForm = ({ refreshEntries }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:5000/notes/", { title, content, mood });
+    await axios.post("https://girlydiarybackend.onrender.com/notes", { title, content, mood });
     refreshEntries();
     setTitle("");
     setContent("");
+    setMood("Happy")
   };
 
   return (
